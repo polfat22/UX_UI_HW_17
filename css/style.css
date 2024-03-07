@@ -64,9 +64,7 @@ footer a:active {
 .contentContainer {
     display: flex;
     flex-direction: row;
-    /* This padding is not neccessary, but if you do not have it the bg is invisible and I wanted to show you the bounds */
     padding: 30px 0px 10px 0px;
-    /* top, right, bottom, left */
     align-self: center;
     position: absolute;
     top: 0;
