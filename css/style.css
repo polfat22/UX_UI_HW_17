@@ -60,14 +60,12 @@ footer a:active {
 
 .textContent p {
     font-size: calc(30px + 1vw);
-    /* Responsive font size */
     min-inline-size: 16px;
-    /* Ensures text doesn't become too small */
 }
 
 .heroImg {
     display: flex;
-    height: 90vh;
+    height: 100%;
     margin-top: 20px;
 }
 
@@ -78,7 +76,7 @@ footer a:active {
 
 .textContent {
     flex-basis: 60%;
-    padding: 0px 0px 0px 30px;
+    padding-left: 30px;
 }
 
 .imageContent {
@@ -90,12 +88,11 @@ footer a:active {
 
 .imageContent img {
     height: auto;
-    width: 600px;
+    width: 100%;
     max-width: 100%;
-    /* Ensures the image is not bigger than its container */
     min-width: 300px;
-    /* Prevents the image from shrinking below 300px */
     border-radius: 15px;
+    object-fit: cover; 
 }
 
 button {
@@ -109,14 +106,13 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     min-width: 120px;
-    /* Prevents the button from shrinking below 120px */
+
 }
 
 button:hover {
     background-color: #000;
     color: #fff;
 }
-
 
 @media (max-width: 768px) {
     .textContent p {
