@@ -1,0 +1,1 @@
+Welcome to Portfolio Page. As for the first challenge, I took spin off the example shown of the requirements page. It isn't as reponsive as I would of hoped but the framwork is there and some css styles.
