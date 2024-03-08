@@ -61,7 +61,7 @@ footer a:active {
 .textContent p {
     font-size: calc(30px + 1vw);
     /* Responsive font size */
-    min-font-size: 16px;
+    min-inline-size: 16px;
     /* Ensures text doesn't become too small */
 }
 
@@ -74,13 +74,6 @@ footer a:active {
 .contentContainer {
     display: flex;
     flex-direction: row;
-    padding: px 0px 10px 0px;
-    align-self: center;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .textContent {
