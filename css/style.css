@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding-top: 60px;
     font-family: Arial, sans-serif;
     background-color: #C6C6C6;
 }
@@ -17,21 +17,26 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #cbcbcb;
     border-bottom: 1.5px solid #000;
 }
 
 .logo img {
     width: 100px;
     height: auto;
-    margin-right: auto;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
 .navigation ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-right: 40px;
     display: flex;
 }
 
@@ -39,7 +44,8 @@ body {
     margin-left: 25px;
 }
 
-.navigation a, footer a {
+.navigation a,
+footer a {
     color: #000;
     text-decoration: none;
 }
@@ -53,20 +59,24 @@ footer a:active {
 }
 
 .textContent p {
-    font-size: 50px;
+    font-size: calc(30px + 1vw);
+    /* Responsive font size */
+    min-font-size: 16px;
+    /* Ensures text doesn't become too small */
 }
 
 .heroImg {
     display: flex;
     height: 90vh;
+    margin-top: 20px;
 }
 
 .contentContainer {
     display: flex;
     flex-direction: row;
-    padding: 30px 0px 10px 0px;
+    padding: px 0px 10px 0px;
     align-self: center;
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
@@ -88,6 +98,10 @@ footer a:active {
 .imageContent img {
     height: auto;
     width: 600px;
+    max-width: 100%;
+    /* Ensures the image is not bigger than its container */
+    min-width: 300px;
+    /* Prevents the image from shrinking below 300px */
     border-radius: 15px;
 }
 
@@ -101,6 +115,8 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
+    min-width: 120px;
+    /* Prevents the button from shrinking below 120px */
 }
 
 button:hover {
@@ -108,14 +124,38 @@ button:hover {
     color: #fff;
 }
 
+
+@media (max-width: 768px) {
+    .textContent p {
+        font-size: 18px;
+    }
+
+    .imageContent img {
+        width: 100%;
+        min-width: 200px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
 footer {
     margin-top: auto;
-    background-color: transparent;
+    background-color: #cbcbcb;
     border-top: 1.5px solid #000;
+    width: 100%;
+    position: relative;
+    clear: both;
+    padding: 0px 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
 footer ul {
-    margin-left: -45px;
+    padding: 0;
+    list-style: none;
 }
 
 footer ul li {
