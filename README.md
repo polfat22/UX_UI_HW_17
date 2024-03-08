@@ -1,1 +1,1 @@
-Welcome to Portfolio Page. As for the first challenge, I took spin off the example shown of the requirements page. It isn't as reponsive as I would of hoped but the framwork is there and some css styles.
+Welcome to my Portfolio Page. For Module 17 challenge, I took spin off the example shown off the requirements page but kept the same HTML tags. As you hit a breakpoint, the content breaks so hopefully next challenge I can solve the issue and make it so the content smoothly position itself. 
